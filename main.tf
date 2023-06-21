@@ -3,7 +3,7 @@ resource "aws_internet_gateway" "main" {
   
   #map
   tags = {
-    Name = var.project_name
+    Name = "timing"
     Terraform = "true"
     Environment = "DEV"
   }
@@ -15,7 +15,7 @@ resource "aws_vpc" "main" {
     enable_dns_support = true
     enable_dns_hostnames = true
     tags = {
-      Name = var.project_name
+      Name = "timing"
       Terraform = "true"
       Environment = "DEV"
     }
